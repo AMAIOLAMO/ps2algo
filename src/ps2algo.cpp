@@ -273,23 +273,31 @@ int main(int argc, char *argv[]) {
     InputLexer lexer{&file};
     Token token;
 
-    std::vector<Token> token_line{};
+    std::vector<Token> token_list{};
 
 
     std::cout << GetNextLineNumber() << ". " << "START" << std::endl;
 
     while((token = lexer.AdvanceToken()).type != TOK_EOF) {
+
+        // TODO: check for multiple line statements here for now
+        if(false) {
+
+        }
+
+
         if(token.IsAsciiOf(';') == false) {
-            token_line.emplace_back(token);
+            token_list.emplace_back(token);
             continue;
         }
         // else
+        
 
-        else if(TryParseInput(token_line)) {}
-        else if(TryAssignment(token_line)) {}
-        else if(TryParseOut(token_line)) {}
+        else if(TryParseInput(token_list)) {}
+        else if(TryAssignment(token_list)) {}
+        else if(TryParseOut(token_list)) {}
 
-        token_line.clear();
+        token_list.clear();
     }
 
     std::cout << GetNextLineNumber() << ". " << "END" << std::endl;
