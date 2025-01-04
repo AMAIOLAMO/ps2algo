@@ -6,7 +6,7 @@
 enum TokenType {
     TOK_NONE,
     TOK_EOF,
-    
+
     // common
     TOK_IDENTIFIER,
     TOK_NUMBER,

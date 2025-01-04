@@ -4,6 +4,7 @@ A simple converter for linux that converts from a simple pseudo code format,
 into human readable algorithm instructions!
 
 Written to solve for people who are lazy to write long algorithm text, and just want to write code.
+It's actually just a funny little parsing project, I am not intending to improve or maintain this.
 
 ## prerequisite
 your need `make`, so install make for yourself.
@@ -19,7 +20,6 @@ apt install make
 ```
 
 or directly download binaries from [here](https://gnuwin32.sourceforge.net/packages/make.htm)
-
 
 ## building
 1. clone this repository

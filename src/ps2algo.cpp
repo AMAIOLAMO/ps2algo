@@ -279,19 +279,16 @@ int main(int argc, char *argv[]) {
     std::cout << GetNextLineNumber() << ". " << "START" << std::endl;
 
     while((token = lexer.AdvanceToken()).type != TOK_EOF) {
-
         // TODO: check for multiple line statements here for now
         if(false) {
 
         }
-
 
         if(token.IsAsciiOf(';') == false) {
             token_list.emplace_back(token);
             continue;
         }
         // else
-        
 
         else if(TryParseInput(token_list)) {}
         else if(TryAssignment(token_list)) {}

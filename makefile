@@ -1,5 +1,5 @@
 GPP=g++
-ARGS=-Wall -Wextra -pedantic -ggdb -O3 -std=gnu++20
+ARGS=-Wall -Wextra -pedantic -O3 -std=gnu++20
 SRC_DIR=src
 IMPL_DIR=private
 
